@@ -1,0 +1,143 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+\ifxetexorluatex
+  \setmainfont{Carlito}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\newcommand{\rsh}[1]{\ensuremath{\textrm{Ř}_{#1}}}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{MeeteshMehta.bib}
+
+\begin{document}
+\name{Meetesh Kalpesh Mehta}
+\tagline{Computer Science Engineer, Developer and Research Scholar}
+\smallskip
+\photo{3.3cm}{Meetesh.jpg}
+\personalinfo{%
+  \faEnvelope{~~S20012@students.iitmandi.ac.in~~}
+  \smallskip
+  \faPhone{~~+91-9717419594~~}
+  \faMapMarker{~~Hyderabad, India}
+\smallskip
+  \faGlobe{~~meetesh06.github.io~~}
+  \faGithub{~~github.com/meetesh06~~} % I'm just making this up though.
+  \faLinkedin{~~linkedin.com/in/meetesh06~~}
+
+  \mailaddress{909, M.I.G. BHEL, R.R. District, Hyderabad 502032}
+  \smallskip
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[page1sidebar]{About}
+
+\begin{justifying}
+  \noindent
+  I'm a research scholar @IIT Mandi working in the area of compilers.
+  My latest work focuses on a JIT compiler for the R Programming Language where I tackle the problems of warmup times and deoptimization overheads.
+  I absolutely love everything about computers and love to dive deeper into what makes them tick.
+  I find myself comfortable in high level abstractions as well as low level things like code generation, assembly, C++.
+  Apart from computers I also tinker a lot with Raspberry Pi's, Arduino's, etc in my free time.
+
+\end{justifying}
+% \justifying{
+% }
+
+
+\cvsection{Certifications}
+
+\cvproject{Interpreter fundamentals}
+\begin{itemize}
+  \item Building and Interpreter from scratch from Udemy.
+\end{itemize}\
+
+\smallskip
+
+\cvproject{Java}
+\begin{itemize}
+\item The Complete Java Developer course from Udemy.
+\end{itemize}\
+
+\smallskip
+
+\cvproject{Data Structures and Algorithms}
+\begin{itemize}
+\item Data Structures and Algorithms course from Udemy.
+\end{itemize}\
+
+\smallskip
+
+\cvproject{HTML and CSS}
+\begin{itemize}
+\item The complete HTML and CSS course from Udemy.
+\end{itemize}
+
+\smallskip
+
+\cvproject{Photoshop}
+\begin{itemize}
+\item Photoshop Beginners Mastery course from Udemy.
+\end{itemize}
+
+\cvsection{TECHNICAL SKILLS}
+
+\cvproject{Core: C++, C, Java}
+\smallskip
+\cvproject{Scripting: JS, python, bash}
+\smallskip
+\cvproject{Databases: SQL, MongoDB}
+\smallskip
+\cvproject{Frameworks: React, React Native, Express}
+\smallskip
+\cvproject{Proficiency: Latex, MS Office, Linux, macOS, Windows}
+
+\cvsection{Course Work at IIT Mandi}
+\smallskip
+\cvproject{Data Structure and Algorithm - II: A}
+\smallskip
+\cvproject{Computer Architecture: O}
+\smallskip
+\cvproject{Compiler Design: O}
+\smallskip
+\smallskip
+\cvproject{Program Analysis: A}
+
+\cvsection{Teaching Assistant}
+
+\cvproject{CS502: Compiler Design (Fall 2022)}
+\smallskip
+\cvproject{CS302: Paradigms of Programming (Spring 2022)}
+\smallskip
+\cvproject{CS515: Advanced Computer Science Practicum (Fall 2021)}
+\smallskip
+
+
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
