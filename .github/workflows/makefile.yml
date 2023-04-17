@@ -10,8 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: MeeteshMehta.tex
-      - name: Upload PDF file
-        uses: actions/upload-artifact@v3
+      - name: Release
+        uses: softprops/action-gh-release@v1
         with:
-          name: PDF
-          path: MeeteshMehta.pdf
+          files: MeeteshMehta.pdf
